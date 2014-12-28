@@ -6,7 +6,7 @@ import sys, urllib, urllib2
 
 class cPyLoadHandler:
     def __init__(self):
-        config = cConfig()
+        self.config = cConfig()
 
     def sendToPyLoad(self, sUrl):
         logger.info('PyLoad link: '+str(sUrl))
